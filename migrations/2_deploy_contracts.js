@@ -23,7 +23,7 @@ module.exports = async function (deployer) {
     await token.transfer(voter5, amount, { from: executor })
 
     // Deploy timelock
-    const minDelay = 1 // How long do we have to wait until we can execute after a passed proposal
+    const minDelay = 0 // How long do we have to wait until we can execute after a passed proposal
 
     // In addition to passing minDelay, we also need to pass 2 arrays.
     // The 1st array contains addresses of those who are allowed to make a proposal.
